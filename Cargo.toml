@@ -4,7 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls-native-roots", "charset", "h2"] }
+hyper = { version = "1", features = ["full"] }
+http-body-util = "0.1"
+hyper-util = { version = "0.1", features = ["full"] }
 tokio = { version = "1", features = ["full"] }
-
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
 rayon = "1.10.0"
+socket2 = { version = "0.5.7", features = ["all"] }
