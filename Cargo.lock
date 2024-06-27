@@ -126,6 +126,7 @@ dependencies = [
  "rayon",
  "socket2",
  "tokio",
+ "tokio-rustls",
  "tracing",
  "tracing-subscriber",
 ]
